@@ -1,0 +1,231 @@
+/* Reset e Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #1d1d1f;
+    background-color: #f5f5f7;
+}
+
+/* Navegação */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px 0;
+}
+
+.navbar li {
+    margin: 0 25px;
+}
+
+.navbar a {
+    color: #f5f5f7;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    transition: opacity 0.3s;
+}
+
+.navbar a:hover {
+    opacity: 0.8;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    color: white;
+    padding-top: 60px;
+}
+
+.title-box {
+    max-width: 800px;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* Seções de Conteúdo */
+.content-section {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dark-bg {
+    background-color: #1d1d1f;
+    color: #f5f5f7;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-text {
+    font-size: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 400;
+    color: #86868b;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.grid-item p {
+    font-size: 17px;
+    color: #86868b;
+}
+
+/* Benefícios */
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.benefit-card {
+    background: white;
+    border-radius: 18px;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1d1d1f;
+}
+
+.benefit-card ul {
+    list-style-position: inside;
+    font-size: 17px;
+    color: #515154;
+}
+
+.benefit-card li {
+    margin-bottom: 10px;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f5f5f7;
+}
+
+.cta-section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.cta-section p {
+    font-size: 24px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #86868b;
+}
+
+.cta-button {
+    background-color: #0071e3;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 22px;
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0077ed;
+}
+
+/* Footer */
+footer {
+    background-color: #1d1d1f;
+    color: #86868b;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 12px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+    
+    .subtitle {
+        font-size: 20px;
+    }
+    
+    .navbar {
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+    
+    .navbar li {
+        margin: 0 15px 10px;
+    }
+    
+    .benefits-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
